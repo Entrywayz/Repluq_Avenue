@@ -7,7 +7,7 @@
 To start the JSON server with the `db.json` file, run the following command:
 
 ```bash
-npx json-server db.json
+npx json-server db.json```
 ```
 
 ## Start Frontend (Angular)
