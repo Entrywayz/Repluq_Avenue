@@ -1,4 +1,4 @@
-##For start db use command##
+##For start db use command
 ```
 npx json-server db.json
 ```
