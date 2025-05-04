@@ -1,0 +1,70 @@
+header {
+    height: 10vh;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.header__links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    --underline-height: 2px;
+    --hover-raise: -0.2em;
+    --animation-speed: 0.4s;
+
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transition:
+        transform var(--animation-speed) ease-out,
+        color calc(var(--animation-speed) * 0.8) ease;
+    will-change: transform;
+    cursor: pointer;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--underline-height);
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform var(--animation-speed) cubic-bezier(0.645, 0.045, 0.355, 1);
+    mix-blend-mode: screen;
+}
+
+a:hover {
+    color: #8e8e8e;
+    transform:
+        translateY(var(--hover-raise)) perspective(500px) rotateX(10deg);
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    background: linear-gradient(90deg, transparent 0%, #fff 50%, transparent 100%);
+}
+
+a:active {
+    transform: translateY(calc(var(--hover-raise) * 0.5));
+    transition-duration: 0.1s;
+}

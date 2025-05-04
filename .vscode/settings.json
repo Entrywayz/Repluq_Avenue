@@ -1,0 +1,8 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line",
+    "editor.cursorSurroundingLinesStyle": "all",
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace"
+}

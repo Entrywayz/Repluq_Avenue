@@ -1,0 +1,291 @@
+{
+    "new-items": [
+        {
+            "id": 1,
+            "title": "BALENCIAGA",
+            "image": "shoes.png"
+        },
+        {
+            "id": 2,
+            "title": "HOODIE",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 3,
+            "title": "T-SHIRT",
+            "image": "t-shirt.png"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "title": "HOODIE",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 2,
+            "title": "BALENCIAGA",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 3,
+            "title": "HYU",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 4,
+            "title": "ASYNC",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 5,
+            "title": "STREETWEAR",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 6,
+            "title": "URBAN",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 7,
+            "title": "SPORTS",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 8,
+            "title": "CASUAL",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 9,
+            "title": "LIMITED",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 10,
+            "title": "COLLECTION",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 11,
+            "title": "PREMIUM",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 12,
+            "title": "BASIC",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 13,
+            "title": "OVERSIZED",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 14,
+            "title": "GRAPHIC",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 15,
+            "title": "MINIMAL",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 16,
+            "title": "COZY",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 17,
+            "title": "UNISEX",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 18,
+            "title": "LOUNGEWEAR",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 19,
+            "title": "ESSENTIALS",
+            "image": "hoodie.png"
+        },
+        {
+            "id": 20,
+            "title": "COMFORT",
+            "image": "hoodie.png"
+        }
+    ],
+    "items": [
+        {
+            "category_id": 1,
+            "id": 1,
+            "name": "Hoodie",
+            "brand": "ADIDAS",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 1,
+            "id": 2,
+            "name": "Sweatshirt",
+            "brand": "Puma",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 1,
+            "id": 3,
+            "name": "Jacket",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 1,
+            "id": 4,
+            "name": "Parka",
+            "brand": "Adidas",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 1,
+            "id": 5,
+            "name": "Windbreaker",
+            "brand": "Reebok",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 1,
+            "id": 6,
+            "name": "Bomber",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 7,
+            "name": "Hoodie",
+            "brand": "Adidas",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 8,
+            "name": "Sweatshirt",
+            "brand": "Puma",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 9,
+            "name": "T-Shirt",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 10,
+            "name": "Jeans",
+            "brand": "Levi's",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 11,
+            "name": "Shorts",
+            "brand": "Reebok",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 2,
+            "id": 12,
+            "name": "Cap",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 13,
+            "name": "Hoodie",
+            "brand": "Adidas",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 14,
+            "name": "Sweatshirt",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 15,
+            "name": "Jacket",
+            "brand": "Puma",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 16,
+            "name": "Jeans",
+            "brand": "Levi's",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 17,
+            "name": "Boots",
+            "brand": "Adidas",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 3,
+            "id": 18,
+            "name": "Hat",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 19,
+            "name": "Hoodie",
+            "brand": "Puma",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 20,
+            "name": "Sweatshirt",
+            "brand": "Levi's",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 21,
+            "name": "Cap",
+            "brand": "Reebok",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 22,
+            "name": "Sneakers",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 23,
+            "name": "Belt",
+            "brand": "Adidas",
+            "image": "hoodie.png"
+        },
+        {
+            "category_id": 4,
+            "id": 24,
+            "name": "Scarf",
+            "brand": "Nike",
+            "image": "hoodie.png"
+        }
+    ]
+}

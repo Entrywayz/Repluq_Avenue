@@ -1,0 +1,46 @@
+.input__outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    /* Добавь высоту, чтобы элементы внутри контейнера выравнивались по вертикали */
+}
+
+input {
+    display: block;
+    font-family: Bicubik;
+    width: 30vw;
+    min-width: 250px;
+    height: 5vh;
+    min-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 1.5;
+    color: #fff;
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 12px 12px 1px rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    /* Это гарантирует, что инпут будет по центру */
+}
+
+input::placeholder {
+    color: #ffffff;
+    transition: color 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input:focus {
+    background: #fff;
+    outline: 0;
+    color: #000000;
+    border-color: #fff;
+    transform: scale(1.5);
+    /* Уменьшено масштабирование для usability */
+}
+
+input:focus::placeholder {
+    color: #000000;
+}

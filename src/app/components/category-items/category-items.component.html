@@ -1,0 +1,13 @@
+<app-searchbar style="text-align: center;" [(ngModel)]="search_text"></app-searchbar>
+
+<div class="items__container" *ngIf="filteredItems().length; else noItems">
+    <div *ngFor="let item of filteredItems()" class="item__card">
+        <img [src]="item.image" width="350" height="350" alt="{{ item.name }}" class="item-image" />
+        <h3 class="item__name">{{ item.name }}</h3>
+        <p class="item__brand">{{ item.brand }}</p>
+    </div>
+</div>
+
+<ng-template #noItems>
+    <p>No products in this category.</p>
+</ng-template>

@@ -1,0 +1,17 @@
+.items__container {
+    display: grid;
+    overflow: auto;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100vh;
+    padding-bottom: 10vh;
+}
+
+.item__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    color: #fff;
+}

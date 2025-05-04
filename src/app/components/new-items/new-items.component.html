@@ -1,0 +1,15 @@
+<div class="container__new">
+    <div *ngFor="let item of new_items">
+        <div class="new__content">
+            <div class="cnt">
+                <div>{{item.title}}</div>
+                <img [src]="item.image" width="300px" class="new__img" height="250px" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="get__outer">
+        <div class="get__inner">
+            <div class="get__your">Get<br /> Your<br /> Stuff<br /></div>
+        </div>
+    </div>
+</div>

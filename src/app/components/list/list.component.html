@@ -1,0 +1,6 @@
+<div class="container__list">
+  <div *ngFor="let item of shopScroll" class="item__container">
+    <img [src]="item.img" width="350" height="250" alt="{{ item.name }}" />
+    <div class="itemscroll_text">{{ item.name }}</div>
+  </div>
+</div>
