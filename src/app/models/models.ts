@@ -40,3 +40,11 @@ export interface CategoryItems {
     brand: string,
     image: string
 }
+
+export interface AllItems {
+    category_id: number,
+    id: number,
+    name: string,
+    brand: string,
+    image: string
+}

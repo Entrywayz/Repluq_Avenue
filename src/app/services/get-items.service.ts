@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Categories, CategoryItem, NewItem, CategoryItems } from '../models/models';
+import { Categories, CategoryItem, NewItem, CategoryItems, AllItems } from '../models/models';
 import { map, Observable } from 'rxjs';
 
 @Injectable({
@@ -27,5 +27,9 @@ export class GetItemsService {
 
   getCategories(): Observable<Categories[]> {
     return this.http.get<Categories[]>(`${this.url}/categories`);
+  }
+
+  getAllItems(): Observable<AllItems[]> {
+    return this.http.get<AllItems[]>(`${this.url}/all`)
   }
 }

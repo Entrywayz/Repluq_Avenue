@@ -5,6 +5,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { CategoryItemsComponent } from './components/category-items/category-items.component';
 import { BrandResolver } from './resolvers/brand.resolver';
+import { ItemDescComponent } from './components/item-desc/item-desc.component';
 
 export const routes: Routes = [
 
@@ -28,6 +29,10 @@ export const routes: Routes = [
         path: 'products/:id',
         component: CategoryItemsComponent,
         resolve: { items: BrandResolver }
+    },
+    {
+        path: 'products/product/:id',
+        component: ItemDescComponent,
     },
     {
         path: '**',

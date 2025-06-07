@@ -7,11 +7,21 @@
 }
 
 .item__card {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 350px;
-    height: 500px;
+    height: 400px;
     color: #fff;
+    margin-bottom: 5vh;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.item__card:hover {
+    border-radius: 50px;
+    background: rgba(60, 60, 60, 0.204);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -1,9 +1,23 @@
 <div class="content__homepage">
-    <app-searchbar />
-    <app-new-items />
-    <div class="list">
-        <div class="list__inner">
-            <app-list />
-        </div>
-    </div>
+    <app-searchbar 
+  (searchFocus)="handleSearchFocus($event)"
+  (searchTextChange)="handleSearchTextChange($event)"   >
+</app-searchbar>
+    @if (!isFocus) {
+        <app-new-items class="" />
+        <div class="list">
+            <div class="list__inner">
+                <app-list class="" />
+            </div>
+        </div>        
+    } @else {
+        <app-main-search [searchText]="searchText" class="active" />
+        <app-new-items class="unactive" />
+        <div class="list">
+            <div class="list__inner">
+                <app-list class="unactive" />
+            </div>
+        </div>          
+    }
+    
 </div>

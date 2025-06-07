@@ -1,38 +1,27 @@
-import { Component, forwardRef, Input, OnInit } from '@angular/core';
-import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-searchbar',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [],
   templateUrl: './searchbar.component.html',
-  styleUrls: ['./searchbar.component.css'],
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => SearchbarComponent),
-      multi: true
-    }
-  ]
+  styleUrls: ['./searchbar.component.css']
 })
-export class SearchbarComponent implements ControlValueAccessor {
+export class SearchbarComponent {
   @Input() value: string = '';
+  @Output() searchFocus = new EventEmitter<boolean>();
+  @Output() searchTextChange = new EventEmitter<string>(); 
 
-  onChange = (value: string) => { };
-  onTouched = () => { };
-
-  writeValue(value: string): void {
-    this.value = value;
+  onInput(event: Event) {
+    const value = (event.target as HTMLInputElement).value;
+    this.searchTextChange.emit(value); 
   }
 
-  registerOnChange(fn: (value: string) => void): void {
-    this.onChange = fn;
+  onFocus() {
+    this.searchFocus.emit(true);
   }
 
-  registerOnTouched(fn: () => void): void {
-    this.onTouched = fn;
-  }
-
-  onInputChange() {
-    this.onChange(this.value);
+  onBlur() {
+    this.searchFocus.emit(false);
   }
 }

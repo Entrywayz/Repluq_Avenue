@@ -8,8 +8,9 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 20px; /* Размытая тень */
 }
+
 
 .header__links {
     height: 100%;

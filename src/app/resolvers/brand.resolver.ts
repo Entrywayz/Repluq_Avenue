@@ -12,6 +12,7 @@ import { CategoryItems } from '../models/models';
 @Injectable({
   providedIn: 'root'
 })
+
 export class BrandResolver implements Resolve<CategoryItems[]> {
   constructor(private brandService: GetItemsService, private router: Router) { }
 

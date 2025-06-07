@@ -6,11 +6,13 @@
   display: flex;
   gap: 30px;
   padding: 20px;
+  scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   width: 100%;
+  transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .container__list::-webkit-scrollbar {

@@ -1,3 +1,7 @@
 <div class="input__outer">
-    <input [(ngModel)]="value" (input)="onInputChange()" placeholder="search by name/code" />
+    <input type="text"
+  [value]="value"
+  (input)="onInput($event)"
+  (focus)="onFocus()"
+  (blur)="onBlur()"  placeholder="search by name/code" />
 </div>

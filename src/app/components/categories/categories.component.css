@@ -15,7 +15,8 @@
 }
 
 .category__item {
-    transition: all 0.3s ease;
+    margin-top: 7px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     padding: 10px;
     box-sizing: border-box;
 }

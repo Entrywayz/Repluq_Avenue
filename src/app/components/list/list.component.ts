@@ -39,29 +39,4 @@ export class ListComponent {
       img: "shorts.png",
     },
   ];
-
-  constructor(private el: ElementRef) { }
-
-  @HostListener('wheel', ['$event'])
-  onWheel(event: WheelEvent): void {
-    const container = this.el.nativeElement.querySelector('.container__list');
-
-    if (container) {
-      const canScrollLeft = container.scrollLeft > 0;
-      const canScrollRight = container.scrollLeft < container.scrollWidth - container.clientWidth;
-
-      const isScrollingLeft = event.deltaY < 0;
-
-      if ((isScrollingLeft && !canScrollLeft) || (!isScrollingLeft && !canScrollRight)) {
-        return;
-      }
-
-      event.preventDefault();
-
-      container.scrollBy({
-        left: event.deltaY,
-        behavior: 'smooth'
-      });
-    }
-  }
 }
