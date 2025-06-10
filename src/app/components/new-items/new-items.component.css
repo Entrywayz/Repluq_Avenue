@@ -1,7 +1,8 @@
 .container__new {
     display: flex;
     color: #fff;
-    height: 34vh;
+    margin-top: 4vh;
+    height: 30vh;
     margin-left: 5%;
     align-items: center;
     gap: 60px;

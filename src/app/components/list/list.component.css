@@ -24,6 +24,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all .3s ease;
+}
+
+.item__container:hover {
+  background: rgba(53, 53, 53, 0.322);
+  border-radius: 40px;
+  box-shadow: 0 12px 1px rgba(53, 53, 53, 0.322);
 }
 
 .item__container img {

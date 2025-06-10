@@ -1,6 +1,6 @@
 <div class="container__list">
-  <div *ngFor="let item of shopScroll" class="item__container">
-    <img [src]="item.img" width="350" height="250" alt="{{ item.name }}" />
-    <div class="itemscroll_text">{{ item.name }}</div>
+  <div *ngFor="let item of category.slice(0,7)" class="item__container">
+    <img [routerLink]="['/products/', item.id]" style="cursor: pointer;" [src]="item.image" width="350" height="250" alt="{{ item.title }}" />
+    <div class="itemscroll_text">{{ item.title }}</div>
   </div>
 </div>

@@ -3,10 +3,18 @@
   transition: all .3s ease;  
 }
 
-app-new-items, app-list {
-  opacity: 1;
+app-main-search {
+    display: none;
 }
 
-.unactive {
-  opacity: 0;
+app-main-search.active {
+    display: block;
+}
+
+app-new-items, app-list {
+    display: block;
+}
+
+app-new-items.unactive, app-list.unactive {
+    display: none;
 }

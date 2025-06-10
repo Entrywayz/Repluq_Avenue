@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .form {
@@ -62,6 +62,8 @@
 .register__input,
 .register__email,
 .register__number,
+.register__fname,
+.register__lname,
 .register__password {
     position: relative;
     margin-bottom: 25px;
@@ -69,20 +71,32 @@
     opacity: 0;
 }
 
-.register__input {
+.register__fname {
     animation-delay: 0.2s;
 }
 
-.register__email {
+.register__lname {
     animation-delay: 0.3s;
 }
 
-.register__number {
+.register__login {
     animation-delay: 0.4s;
 }
 
-.register__password {
+.register__input {
     animation-delay: 0.5s;
+}
+
+.register__email {
+    animation-delay: 0.6s;
+}
+
+.register__number {
+    animation-delay: 0.7s;
+}
+
+.register__password {
+    animation-delay: 0.8s;
 }
 
 @keyframes slideIn {
@@ -156,7 +170,7 @@ input::placeholder {
     margin-top: 10px;
     position: relative;
     overflow: hidden;
-    animation: slideIn 0.5s ease-out 0.6s forwards;
+    animation: slideIn 0.5s ease-out 1s forwards;
     opacity: 0;
 }
 

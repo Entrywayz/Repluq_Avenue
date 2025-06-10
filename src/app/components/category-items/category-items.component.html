@@ -1,6 +1,6 @@
 <div class="items__container" *ngIf="filteredItems().length; else noItems">
-    <div *ngFor="let item of filteredItems()" class="item__card">
-        <img [src]="item.image" width="350" height="350" alt="{{ item.name }}" class="item-image" />
+    <div *ngFor="let item of filteredItems()"  class="item__card">
+        <img [routerLink]="['/products/product', item.id]" [src]="item.image[0]" width="350" router height="350" alt="{{ item.name }}" class="item-image" />
         <h3 class="item__name">{{ item.name }}</h3>
         <p class="item__brand">{{ item.brand }}</p>
     </div>

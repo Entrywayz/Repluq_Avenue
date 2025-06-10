@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { CategoryItemsComponent } from './components/category-items/category-items.component';
 import { BrandResolver } from './resolvers/brand.resolver';
 import { ItemDescComponent } from './components/item-desc/item-desc.component';
+import { UserPageComponent } from './components/user-page/user-page.component';
 
 export const routes: Routes = [
 
@@ -33,10 +34,15 @@ export const routes: Routes = [
     {
         path: 'products/product/:id',
         component: ItemDescComponent,
+    },    
+    {
+        path: 'user',
+        component: UserPageComponent
     },
     {
         path: '**',
         redirectTo: '',
         pathMatch: 'full'
-    }
+    },
+
 ];

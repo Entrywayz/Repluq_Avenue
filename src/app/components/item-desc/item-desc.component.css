@@ -1,0 +1,32 @@
+.desc__inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: 2vw;
+}
+
+.img__container {
+    /*border: 1px solid rgba(70, 70, 70, 0.322);*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    transition: all .3s ease;
+}
+
+.thumbnail {
+    border: 1px solid rgba(70, 70, 70, 0.322);
+    border-radius: 10px;
+}
+
+.thumbnails__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.next__btn,
+.prev__btn {
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}

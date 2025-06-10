@@ -1,14 +1,16 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { CategoryItems } from '../../models/models';
 import { NgFor, NgIf } from '@angular/common';
-import { SearchbarComponent } from "../searchbar/searchbar.component";
 import { FormsModule } from '@angular/forms';
+import { SearchbarComponent } from "../searchbar/searchbar.component";
 
 @Component({
   selector: 'app-category-items',
-  imports: [NgIf, NgFor, SearchbarComponent, FormsModule],
+  standalone: true,
+  imports: [NgIf, NgFor, RouterLink, FormsModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './category-items.component.html',
   styleUrls: ['./category-items.component.css']
 })

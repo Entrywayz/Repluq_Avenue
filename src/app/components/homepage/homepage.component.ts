@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { NewItemsComponent } from "../new-items/new-items.component";
 import { ListComponent } from "../list/list.component";
 import { SearchbarComponent } from "../searchbar/searchbar.component";
@@ -14,7 +14,7 @@ import { MainSearchComponent } from "../main-search/main-search.component";
 export class HomepageComponent {
   isFocus: boolean = false;
   searchText: string = '';
-
+  
   handleSearchFocus(isFocused: boolean) {
     this.isFocus = isFocused; 
   }

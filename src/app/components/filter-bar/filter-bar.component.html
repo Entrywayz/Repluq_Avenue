@@ -1,0 +1,65 @@
+<div class="filter-content">
+  <div class="filter-section">
+    <h3>Gender</h3>
+    <div class="gender-options">
+      <button class="gender-option"
+        *ngFor="let gender of ['Male', 'Female', 'Unisex']"
+        [class.active]="selectedGender === gender"
+        (click)="selectedGender = gender"
+      >
+        {{ gender }}
+      </button>
+    </div>
+  </div>
+  <div class="filter-section">
+    <h3>Size</h3>
+    <div class="size-options">
+      <button 
+        *ngFor="let size of ['XS', 'S', 'M', 'L', 'XL', 'XXL']"
+        [class.active]="selectedSize === size"
+        (click)="selectedSize = size"
+        class="size-option"
+      >
+        {{ size }}
+      </button>
+    </div>
+  </div>
+  <div class="filter-section">
+    <h3>Price</h3>
+    <div class="price-range">
+      <input
+        type="range"
+        min="0"
+        max="1000"
+        [(ngModel)]="priceRange.min"
+        class="range-input"
+      />
+      <input
+        type="range"
+        min="0"
+        max="1000"
+        [(ngModel)]="priceRange.max"
+        class="range-input"
+      />
+      <div class="price-values">
+        <span>{{ priceRange.min }} $</span>
+        <span>{{ priceRange.max }} $</span>
+      </div>
+    </div>
+  </div>
+  <div class="filter-section">
+    <h3>Colours</h3>
+    <div class="color-options">
+      <button
+        *ngFor="let color of [
+          'bg-gradient-to-r from-gray-400 to-gray-600',
+          'bg-gradient-to-r from-gray-600 to-gray-800',
+          'bg-gradient-to-r from-gray-800 to-gray-900'
+        ]"
+        [class]="color + ' color-option'"
+        [class.active]="selectedColors.includes(color)"
+        (click)="toggleColor(color)"
+      ></button>
+    </div>
+  </div>
+</div>

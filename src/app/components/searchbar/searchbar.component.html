@@ -1,7 +1,7 @@
 <div class="input__outer">
-    <input type="text"
+    <input #searchInput type="text"
   [value]="value"
   (input)="onInput($event)"
   (focus)="onFocus()"
-  (blur)="onBlur()"  placeholder="search by name/code" />
+  (blur)="onBlur($event)"  placeholder="search by name/code" />
 </div>

@@ -2,14 +2,14 @@
     <h1 class="login__text">Please, login</h1>
     <form class="form">
         <div class="login__input">
-            <label>Login</label>
-            <input type="text">
+            <label>Email</label>
+            <input name="email" [(ngModel)]="loginObj.email" type="email">
         </div>
         <div class="login__password">
             <label>Password</label>
-            <input type="password">
+            <input name="password" [(ngModel)]="loginObj.password" type="password">
         </div>
-        <button class="log__btn">LOGIN</button>
+        <button type="button" (click)="onLogin()" class="log__btn">LOGIN</button>
         <div class="text__dont">Don't have account? <a class="link__to" routerLink="/register">REGISTER</a></div>
     </form>
 </div>

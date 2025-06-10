@@ -32,4 +32,11 @@ export class GetItemsService {
   getAllItems(): Observable<AllItems[]> {
     return this.http.get<AllItems[]>(`${this.url}/all`)
   }
+
+  getItemById(id: number): Observable<AllItems | undefined> {
+    return this.http.get<AllItems[]>(`${this.url}/items`).pipe(
+      map(items => items.find(item => item.id === id))
+    )
+  }
+  
 }

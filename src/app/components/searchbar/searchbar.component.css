@@ -5,7 +5,6 @@
     padding: 20px;
     box-sizing: border-box;
     width: 100%;
-    /* Добавь высоту, чтобы элементы внутри контейнера выравнивались по вертикали */
 }
 
 input {
@@ -24,7 +23,6 @@ input {
     transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
     box-shadow: 12px 12px 1px rgba(255, 255, 255, 0.2);
     margin: 0 auto;
-    /* Это гарантирует, что инпут будет по центру */
 }
 
 input::placeholder {
@@ -38,7 +36,6 @@ input:focus {
     color: #000000;
     border-color: #fff;
     transform: scale(1.5);
-    /* Уменьшено масштабирование для usability */
 }
 
 input:focus::placeholder {

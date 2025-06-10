@@ -1,1 +1,33 @@
-<p>item-desc works!</p>
+<section class="desc__outer">
+    <div class="desc__inner">
+        
+        <button class="prev__btn" (click)="prevImage()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+                <path d="M400-80 0-480l400-400 56 57-343 343 343 343-56 57Z"/>
+            </svg>
+        </button>
+        <div class="img__container">
+            <div class="main-img__container">
+                <img [src]="currentMainImage" width="500" height="500" alt="Main Product Image">
+            </div>
+
+            <div class="thumbnails__container">
+                <div *ngFor="let img of thumbnails; let i = index" class="thumbnail">
+                    <img 
+                        [src]="img" 
+                        width="100" 
+                        height="100" 
+                        [alt]="'Thumbnail ' + (i + 1)"
+                        (click)="setMainImage(img)"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <button class="next__btn" (click)="nextImage()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+                <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/>
+            </svg>
+        </button>
+    </div>
+</section>

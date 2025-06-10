@@ -1,8 +1,11 @@
-<div class="main__search" *ngIf="filteredItems().length;">
+<ng-container ngSkipHydration="true"*ngIf="filteredItems().length">
+  <main class="main" >
+    <div class="main__search">
     <div class="search__item" *ngFor="let i of filteredItems()">
-        <div class="category__title">{{i.name}}</div>
-        <img [src]="i.image" width="350" height="350" alt="">
+      <div class="category__title">{{i.name}}</div>
+      <img [src]="i.image" [routerLink]="['/products/product/', i.id]" width="350" height="350" alt="">
     </div>
-</div><ng-template #noItems>
-    <p>No products</p>
-</ng-template>
+  </div>
+  <app-filter-bar></app-filter-bar>
+  </main>
+</ng-container>

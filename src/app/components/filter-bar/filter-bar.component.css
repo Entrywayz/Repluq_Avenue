@@ -1,0 +1,157 @@
+/* filter-bar.component.css */
+.filter-container {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.filter-toggle svg {
+  transition: transform 0.2s;
+}
+
+.filter-toggle svg.rotate {
+  transform: rotate(180deg);
+}
+
+.filter-content {
+  color: #fff;
+  height: 100vh;
+  border-top: 1px solid rgba(92, 92, 92, 0.1);
+  border-left: 1px solid rgba(92, 92, 92, 0.1);
+  margin-top: 1rem;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.gender-options,
+.size-options,
+.color-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gender-option:hover,
+.size-option:hover {
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+}
+
+.gender-options button,
+.size-options button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.gender-options button:hover,
+.size-options button:hover {
+  border-color: #9ca3af;
+}
+
+.gender-options button.active,
+.size-options button.active {
+  background: #ffffff;
+  color: black;
+  border-color: #ffffff;
+}
+
+  .range-input {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    background: transparent;
+    margin: 10px 0;
+  }
+  
+  /* WebKit (Chrome, Safari, Edge) */
+  .range-input::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #e0e0e0; /* серый фон трека */
+    border-radius: 4px;
+  }
+  
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000000; /* черный ползунок */
+    border-radius: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+  }
+  
+  /* Firefox */
+  .range-input::-moz-range-track {
+    height: 8px;
+    background: #e0e0e0; /* серый фон трека */
+    border-radius: 4px;
+  }
+  
+  .range-input::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000000; /* черный ползунок */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .range-input::-moz-range-progress {
+    background: #000000; /* черная заполненная часть */
+    height: 8px;
+    border-radius: 4px;
+  }
+
+
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.range-input {
+  width: 100%;
+  cursor: pointer;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-option {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.active {
+  border-color: #111827;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #111827;
+}

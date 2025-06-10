@@ -12,6 +12,12 @@ header {
 }
 
 
+.account__btns {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
 .header__links {
     height: 100%;
     display: flex;
