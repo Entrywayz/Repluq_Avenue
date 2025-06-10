@@ -21,4 +21,3 @@ If you need to install the JSON server, use npm:
 ```bash
 npm install json-server
 ```
-```
