@@ -15,5 +15,4 @@ import { SearchbarComponent } from "./components/searchbar/searchbar.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'rep';
 }

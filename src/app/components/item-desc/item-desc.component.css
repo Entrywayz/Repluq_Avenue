@@ -1,3 +1,95 @@
+.desc__outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  display: flex;
+}
+
+.btns__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__btn {
+    font-family: 'Bicubik', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20%;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    width: 9vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 7vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.item__price {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.cart__btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.favorite__btn {
+    font-family: 'Bicubik', sans-serif;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    border-radius: 30px;
+    outline: none;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    width: 9vw;
+    cursor: pointer;
+    height: 7vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.favorite__btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.favorite__btn:hover .favorite__icon {
+    fill: #fff;
+}
+
+.item__desc {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+
+.item__name {
+  font-size: 2rem;
+}
+
+.item__brand {
+    color: #3f3f3f;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
 .desc__inner {
     display: flex;
     width: 100%;
@@ -29,4 +121,127 @@
     outline: none;
     text-decoration: none;
     border: none;
+}
+
+.recomend-section {
+  margin-top: 10vh;
+  width: 50%;
+  position: relative;
+  border-left: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.recomend__container {
+  display: flex;
+  width: 100%;
+  height: 70vh; /* Фиксированная высота контейнера */
+  padding-top: 0;
+  border-left: none;
+}
+
+/* Заголовок над контейнером */
+.recomend__text {
+  position: absolute;
+  top: -60px; 
+  left: -1px;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  border-left: 1px solid #fff;
+  margin: 0;
+  padding: 10px 0;
+  background: transparent;
+}
+
+/* Контейнер для скролла */
+.recomend__outer {
+  height: 100%;
+  overflow-y: auto; /* Вертикальный скролл */
+  padding-right: 15px; /* Чтобы контент не заезжал под скроллбар */
+}
+
+/* Стиль скроллбара */
+.recomend__outer::-webkit-scrollbar {
+  width: 8px;
+}
+.recomend__outer::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+.recomend__outer::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+.recomend__outer::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.recomend__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  min-height: min-content; /* Важно для корректного скролла */
+}
+
+/* Остальные стили без изменений */
+.items__recommended {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item__img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  z-index: 1000;
+  margin-bottom: 10%;
+  transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.item__img:hover {
+  border-radius: 30px;
+  background: rgba(70, 70, 70, 0.322);
+}
+
+.sizes__container {    
+  display: flex;
+  flex-direction: row;
+}
+
+.size-opt {
+  font-family: 'Bicubik', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent;
+  width: 4vw;
+  height: 5vh;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-right: 10px;
+  transition: all .3s ease;
+}
+
+.size-opt:hover {
+  border-color: #9ca3af;
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+}
+
+.size-opt.active {
+  background: #ffffff;
+  color: black;
+  border-color: #ffffff;
 }

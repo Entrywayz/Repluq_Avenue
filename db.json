@@ -126,12 +126,12 @@
             "name": "Hoodie",
             "brand": "ADIDAS",
             "image": [
-                        "hoodie.png",
-                        "shoes.png",
-                        "bombers.png",
-                        "hoodie.png"
+                        "/pizda.png",
+                        "/shoes.png",
+                        "/bombers.png",
+                        "/hoodie.png"
                     ],
-            "price": "1000$",
+            "price": "1000",    
             "size": [
                 "XL",
                 "M",
@@ -146,7 +146,7 @@
             "name": "Sweatshirt",
             "brand": "Puma",
              "image": [
-                        "hoodie.png",
+                        "pizda.jpg",
                         "shoes.png",
                         "bombers.png",
                         "hoodie.png"
@@ -166,7 +166,7 @@
             "name": "Jacket",
             "brand": "Nike",
              "image": [
-                        "hoodie.png",
+                        "/pizda.png",
                         "shoes.png",
                         "bombers.png",
                         "hoodie.png"
@@ -605,12 +605,12 @@
         {
             "id": 1,
             "name": "BALENCIAGA",
-            "image": "shoes.png"
+            "image": "/pizda.png"
         },
         {
             "id": 2,
             "name": "HOODIE",
-            "image": "hoodie.png"
+            "image": "/pizda.png"
         },
         {
             "id": 3,
@@ -622,7 +622,7 @@
             "id": 1,
             "name": "Hoodie",
             "brand": "ADIDAS",
-            "image": "hoodie.png"
+            "image": "pizda.png"
         },
         {
             "category_id": 1,
@@ -788,7 +788,7 @@
         {
             "id": 25,
             "name": "BALENCIAGA",
-            "image": "shoes.png"
+            "image": "/pizda.png"
         },
         {
             "id": 26,

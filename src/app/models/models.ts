@@ -46,11 +46,13 @@ export interface AllItems {
     id: number,
     name: string,
     brand: string,
+    price: string,
     image: string
+    size: string[]
 }
 
 export class UserRegister {
-    uid: number
+    uid: string
     email: string
     login: string
     first_name: string
@@ -59,7 +61,7 @@ export class UserRegister {
     password: string
 
     constructor() {
-        this.uid = 0
+        this.uid = ''
         this.email = ''
         this.login = ''
         this.first_name = ''
